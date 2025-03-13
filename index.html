@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrollytelling Sales Data</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://unpkg.com/scrollama"></script>
+    <title>Scrollytelling Experience</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div class="scrollytelling">
-        <section class="text">
-            <p>Welcome to Sales Insights! Scroll down to explore the data.</p>
-        </section>
-        
-        <section class="chart-container">
-            <svg id="salesChart"></svg>
-        </section>
-
-        <section class="text step" data-step="1">
-            <p>Sales in Q1 were strong, with growth in multiple regions.</p>
-        </section>
-
-        <section class="text step" data-step="2">
-            <p>Q2 saw a dip, possibly due to seasonality.</p>
-        </section>
-
-        <section class="text step" data-step="3">
-            <p>Q3 recovered with increased marketing efforts.</p>
+    <div class="container">
+        <section class="scrollytelling">
+            <div class="sticky-graphic">
+                <img id="dynamic-image" src="image1.jpg" alt="Scrollytelling Image">
+            </div>
+            <div class="text-sections">
+                <div class="step" data-img="image1.jpg">
+                    <h2>Step 1</h2>
+                    <p>This is the beginning of the journey.</p>
+                </div>
+                <div class="step" data-img="image2.jpg">
+                    <h2>Step 2</h2>
+                    <p>The story progresses with a twist.</p>
+                </div>
+                <div class="step" data-img="image3.jpg">
+                    <h2>Step 3</h2>
+                    <p>A moment of realization and change.</p>
+                </div>
+                <div class="step" data-img="image4.jpg">
+                    <h2>Step 4</h2>
+                    <p>The grand conclusion unfolds.</p>
+                </div>
+            </div>
         </section>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
