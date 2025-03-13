@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollytelling Sales Data</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+</head>
+<body>
+
+    <div class="scrollytelling">
+        <section class="text">
+            <p>Welcome to Sales Insights! Scroll down to explore the data.</p>
+        </section>
+        
+        <section class="chart-container">
+            <svg id="salesChart"></svg>
+        </section>
+
+        <section class="text step" data-step="1">
+            <p>Sales in Q1 were strong, with growth in multiple regions.</p>
+        </section>
+
+        <section class="text step" data-step="2">
+            <p>Q2 saw a dip, possibly due to seasonality.</p>
+        </section>
+
+        <section class="text step" data-step="3">
+            <p>Q3 recovered with increased marketing efforts.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
